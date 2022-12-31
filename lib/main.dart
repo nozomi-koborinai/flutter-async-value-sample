@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_async_value_sample/login_page.dart';
+import 'package:flutter_async_value_sample/login_page_stateful.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class App extends ConsumerWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const LoginPage(),
+      home: const LoginPageStateful(),
     );
   }
 }

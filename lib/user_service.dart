@@ -10,6 +10,7 @@ class UserService {
 
   /// ログインする
   Future<void> login() async {
+    // AsyncValue状態を操作するためのコントローラを取得
     final notifier = ref.read(loginStateProvider.notifier);
 
     // ログイン結果をローディング中にする
